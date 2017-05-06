@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATOR</title>
+	<style type="text/css">
+		.calc{
+			position: relative;
+			width: 120px;
+			border: 1px solid #999;
+			padding-right: -20px; 
+		}
+		.field{
+			width: 100px;
+			margin-bottom: 30px;
+			text-align: right;
+			margin-top: 5px;
+		}
+		.myDiv{
+			position: absolute;
+			border: 1px solid #999;
+			left: 50%;
+			top: 25%;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 40px; 
+			padding-bottom: 20px;
+			border-radius: 5%;
+			background-color: rgba(0, 199, 216, 0.06);
+		}
+		.div2{
+			margin-left: 5px;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+<body text= "gold">
+<div class="myDiv">
+	<form name="calculator" class="calc">
+	<div class="div2">
+		<input type="textfield" name="ans" value="" class="field" placeholder="0"><br/>
+		<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+		<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+		<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+		<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+		<br/>
+		<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+		<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+		<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+		<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+		<br/>
+		<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+		<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+		<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+		<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+		<br/>
+		<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+		<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+		<input style="width: 30px;" type="reset" value="mc">
+		<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+	</div>
+
+</form>
+    <script type="text/javascript">
+    	// function displynum(n1){
+
+</div>
+    	// 	calcform.txt1.value = calcform.txt1.value += n1;
+    	// }
+    </script>
+</body>
+</html>
